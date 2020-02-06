@@ -1,2 +1,4 @@
-# cis355
-Source code for projects in CIS 355 Winter 2020 (Server Side Web Application Development)
+BENJAMIN JAMES DORE
+CIS 355 01
+
+This repository is used to store the projects for the Server Side Web Application Development course at Saginaw Valley State University.
