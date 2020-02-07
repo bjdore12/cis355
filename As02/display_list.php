@@ -9,6 +9,8 @@
     # Homework: As02
     #
 
+    echo "<a href=../index.php><-- Back to Home</a><br><br>";
+
     # connect
     $pdo = new PDO( 
         "mysql:host=".'10.8.30.49'.";"."dbname=".'bjdore355wi20', 
