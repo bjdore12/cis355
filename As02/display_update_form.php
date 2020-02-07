@@ -1,4 +1,15 @@
 <?php
+    #
+    # Name:     Benjamin J. Dore
+    #
+    # Class:    Server Side Web Application Development
+    #
+    # Date:     02/05/2020
+    #
+    # Homework: As02
+    #
+
+    session_start();
 
     # connect
     $pdo = new PDO( 
@@ -7,28 +18,19 @@
         '58406aaA&'
     );
 
+    # put the information for the chosen record into variable $results 
     $id = $_GET['id'];
-    $sql = "SELECT * FROM messages WHERE id=" . $id;
+    $sql = "SELECT * FROM messages WHERE id=$id";
     $query=$pdo->prepare($sql);
     $query->execute();
     $result = $query->fetch();
 
-
-    function update($id) {
-        $n = $_POST['msg'];
-
-        $sql = "UPDATE messages SET message = '$n' WHERE id = '$id'";
-        $pdo->query($sql);
-        echo "<p>Update has been made!";
-    }
-
-    if (isset($_POST))
-        update($id);
+    $_SESSION['$id'] = $id;
 
 ?>
 
 <h1>Update existing message</h1>
-<form method='post' action=''>
-    message: <input name='msg' type='text' value='<?php echo $result['message']; ?>'><br />
+<form method='post' action='update_record.php?id'>
+    message: <input name='msg' type='text' value='<?php echo $result['message'];?>'><br />
     <input type="submit" value="Save">
 </form>

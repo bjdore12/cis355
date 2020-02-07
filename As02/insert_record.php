@@ -1,4 +1,13 @@
 <?php
+    #
+    # Name:     Benjamin J. Dore
+    #
+    # Class:    Server Side Web Application Development
+    #
+    # Date:     02/05/2020
+    #
+    # Homework: As02
+    #
 
     # connect
     $pdo = new PDO( 
