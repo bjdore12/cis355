@@ -56,7 +56,7 @@
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "UPDATE events set event_description = ?, event_location = ?, event_date = ?, event_time = ? WHERE id = ?";
             $q = $pdo->prepare($sql);
-            $q->execute(array($desc,$loc,$date,$time));
+            $q->execute(array($desc,$loc,$date,$time, $id));
             Database::disconnect();
             header("Location: events.php");
         }
@@ -91,7 +91,7 @@
                         <h3>Create an Event</h3>
                     </div>
              
-                    <form class="form-horizontal" action="e_create.php" method="post">
+                    <form class="form-horizontal" action="e_update.php?id=<?php echo $id?>" method="post">
                       <div class="control-group <?php echo !empty($descError)?'error':'';?>">
                         <label class="control-label">Event Description</label>
                         <div class="controls">
@@ -129,7 +129,7 @@
                         </div>
                       </div>
                       <div class="form-actions">
-                          <button type="submit" class="btn btn-success">Create</button>
+                          <button type="submit" class="btn btn-success">Update</button>
                           <a class="btn" href="events.php">Back</a>
                         </div>
                     </form>
