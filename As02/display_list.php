@@ -15,7 +15,7 @@
     $pdo = new PDO( 
         "mysql:host=".'10.8.30.49'.";"."dbname=".'bjdore355wi20', 
         'bjdore355wi20', 
-        '58406aaA&'
+        '********'
     );
     # display link to "create" form
     echo "<a href='display_create_form.php'>Create</a><br><br>";
