@@ -92,16 +92,16 @@
                       <div class="control-group <?php echo !empty($dateError)?'error':'';?>">
                         <label class="control-label">Event Date</label>
                         <div class="controls">
-                            <input name="evnt_date" type="text"  placeholder="Event Date" value="<?php echo !empty($date)?$date:'';?>">
+                            <input name="evnt_date" type="date"  placeholder="Event Date" value="<?php echo !empty($date)?$date:'';?>">
                             <?php if (!empty($dateError)): ?>
                                 <span class="help-inline"><?php echo $dateError;?></span>
                             <?php endif;?>
                         </div>
                       </div>
                       <div class="control-group <?php echo !empty($timeError)?'error':'';?>">
-                        <label class="control-label">Event Time</label>
+                        <label class="control-label">Event Time (HH:MM AM/PM)</label>
                         <div class="controls">
-                            <input name="evnt_time" type="text"  placeholder="Event Date" value="<?php echo !empty($time)?$time:'';?>">
+                            <input name="evnt_time" type="time"  placeholder="Event Time" value="<?php echo !empty($time)?$time:'';?>">
                             <?php if (!empty($timeError)): ?>
                                 <span class="help-inline"><?php echo $timeError;?></span>
                             <?php endif;?>
@@ -113,7 +113,6 @@
                         </div>
                     </form>
                 </div>
-                 
     </div> <!-- /container -->
   </body>
 </html>
