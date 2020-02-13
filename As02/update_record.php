@@ -9,13 +9,15 @@
     # Homework: As02
     #
     
+    require '../../password.php';
+
     session_start();
 
     # connect
     $pdo = new PDO( 
         "mysql:host=10.8.30.49; dbname=bjdore355wi20", 
         'bjdore355wi20', 
-        '*********'
+        $password
     );
 
     $id = $_SESSION['$id'];

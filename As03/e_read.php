@@ -10,7 +10,7 @@
     } else {
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "SELECT * FROM events where id = ?";
+        $sql = 'SELECT id, DATE_FORMAT(event_date, "%m/%d/%Y") As event_date, TIME_FORMAT(event_time, "%h:%i %p") As event_time, event_location, event_description FROM events where id = ?';
         $q = $pdo->prepare($sql);
         $q->execute(array($id));
         $data = $q->fetch(PDO::FETCH_ASSOC);

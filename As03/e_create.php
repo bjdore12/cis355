@@ -99,7 +99,7 @@
                         </div>
                       </div>
                       <div class="control-group <?php echo !empty($timeError)?'error':'';?>">
-                        <label class="control-label">Event Time (HH:MM AM/PM)</label>
+                        <label class="control-label">Event Time</label>
                         <div class="controls">
                             <input name="evnt_time" type="time"  placeholder="Event Time" value="<?php echo !empty($time)?$time:'';?>">
                             <?php if (!empty($timeError)): ?>

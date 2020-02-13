@@ -30,7 +30,7 @@
                   <?php
                    include 'database.php';
                    $pdo = Database::connect();
-                   $sql = 'SELECT * FROM events ORDER BY id DESC';
+                   $sql = 'SELECT id, DATE_FORMAT(event_date, "%m/%d/%Y") As event_date, TIME_FORMAT(event_time, "%h:%i %p") As event_time, event_location, event_description FROM events ORDER BY id DESC';
                    foreach ($pdo->query($sql) as $row) {
                             echo '<tr>';
                             echo '<td>'. $row['event_description'] . '</td>';
