@@ -16,7 +16,7 @@
                     <a href="e_create.php" class="btn btn-success">Create</a>
                     <a href="../index.php" class="btn btn-secondary">Back to Home</a>
                 </p>
-                <table class="table table-striped table-bordered">
+                <table class="table table-striped table-bordered table-hover">
                   <thead>
                     <tr>
                       <th>Event Description</th>
