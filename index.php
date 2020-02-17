@@ -33,7 +33,7 @@
     <div class="container">
         <div class="p-2">
 
-            <p><b>This pages contains links to assignments for CIS 355 (Winter 2020): Server Side Web Application Development.</b></p>
+            <p><b>This page contains links to assignments for CIS 355 (Winter 2020): Server Side Web Application Development.</b></p>
             <p>See below for assignments:</p>
 
             <div class="list-group">
