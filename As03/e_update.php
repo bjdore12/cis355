@@ -7,7 +7,7 @@
         $id = $_REQUEST['id'];
     }
      
-    if ( null==$id ) {
+    if ( null == $id ) {
         header("Location: events.php");
     }
 
