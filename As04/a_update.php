@@ -73,9 +73,9 @@
                       <div class="control-group">
                         <label class="control-label">Name</label>
                         <div class="controls">
-                            <?php echo "<select class='form-control' name='name' id='name'>";
+                            <?php echo "<select class='form-control' name='name' id='name' disabled>";
 								foreach ($pdo->query($query) as $row) {
-									echo "<option value='" . $row['cust_id'] . " '> " . $row['name'] . "</option>";
+									echo "<option value = '" . $row['cust_id'] . " '> " . $row['name'] . "</option>";
                                 }
                                 echo "</select>";
                             ?>
