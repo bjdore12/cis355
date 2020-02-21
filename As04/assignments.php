@@ -9,42 +9,42 @@
 <body>
     <div class="container">
             <div class="row">
-                <h3>Events</h3>
+                <h3>Assignments</h3>
             </div>
             <div class="row">
                 <p>
-                    <a href="e_create.php" class="btn btn-success">Create</a>
-                    <a href="customers.php" class="btn btn-secondary">Customers</a>
-                    <a href="../As04/assignments.php" class="btn btn-secondary">Assignments</a>
+                    <a href="a_create.php" class="btn btn-success">Create</a>
+                    <a href="../As03/customers.php" class="btn btn-secondary">Customers</a>
+                    <a href="../As03/events.php" class="btn btn-secondary">Events</a>
                     <a href="../index.php" class="btn btn-secondary">Back to Home</a>
                 </p>
                 <table class="table table-striped table-bordered table-hover">
                   <thead>
                     <tr>
+                      <th>Customer Name</th>
+                      <th>Customer Email</th>
                       <th>Event Description</th>
                       <th>Event Location</th>
-                      <th>Event Date</th>
-                      <th>Event Time</th>
                       <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                   <?php
-                   include 'database.php';
+                   include '../As03/database.php';
                    $pdo = Database::connect();
-                   $sql = 'SELECT id, DATE_FORMAT(event_date, "%m/%d/%Y") As event_date, TIME_FORMAT(event_time, "%h:%i %p") As event_time, event_location, event_description FROM events ORDER BY id DESC';
+                   $sql = 'SELECT assignments.id As as_id, name, email, event_description, event_location FROM assignments, customers, events WHERE assignments.cust_id = customers.id AND assignments.event_id = events.id';
                    foreach ($pdo->query($sql) as $row) {
                             echo '<tr>';
+                            echo '<td>'. $row['name'] . '</td>';
+                            echo '<td>'. $row['email'] . '</td>';
                             echo '<td>'. $row['event_description'] . '</td>';
                             echo '<td>'. $row['event_location'] . '</td>';
-                            echo '<td>'. $row['event_date'] . '</td>';
-                            echo '<td>'. $row['event_time'] . '</td>';
                             echo '<td width=250>';
-                            echo '<a class="btn" href="e_read.php?id='.$row['id'].'">Read</a>';
+                            echo '<a class="btn" href="a_read.php?id='.$row['as_id'].'">Read</a>';
                             echo ' ';
-                            echo '<a class="btn btn-success" href="e_update.php?id='.$row['id'].'">Update</a>';
+                            echo '<a class="btn btn-success" href="a_update.php?id='.$row['as_id'].'">Update</a>';
                             echo ' ';
-                            echo '<a class="btn btn-danger" href="e_delete.php?id='.$row['id'].'">Delete</a>';
+                            echo '<a class="btn btn-danger" href="a_delete.php?id='.$row['as_id'].'">Delete</a>';
                             echo '</td>';
                             echo '</tr>';
                    }

@@ -14,6 +14,8 @@
             <div class="row">
                 <p>
                     <a href="c_create.php" class="btn btn-success">Create</a>
+                    <a href="../As04/assignments.php" class="btn btn-secondary">Assignments</a>
+                    <a href="events.php" class="btn btn-secondary">Events</a>
                     <a href="../index.php" class="btn btn-secondary">Back to Home</a>
                 </p>
                 <table class="table table-striped table-bordered">

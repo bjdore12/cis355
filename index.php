@@ -46,7 +46,7 @@
             <div class="card">
                 <div class="card-header">
                     <a class="card-link">
-                        <b>Assignment 3</b> - More practice with CRUD based web applications using a 'Customers' database and a 'Events' database <span class="badge badge-info">New</span>
+                        <b>Assignment 3</b> - More practice with CRUD based web applications using a 'Customers' database and a 'Events' database
                     </a>
                 </div>
                 <div class="card-body">
@@ -61,7 +61,7 @@
             <br>
 
             <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action disabled"><b>Assignment 4</b> - Pending assignment</a>
+                <a href="As04/assignments.php" class="list-group-item list-group-item-action"><b>Assignment 4</b> - Extension of assignment 3, using a junction table <span class="badge badge-info">New</span></a>
                 <a href="#" class="list-group-item list-group-item-action disabled"><b>Assignment 5</b> - Pending assignment</a>
                 <a href="#" class="list-group-item list-group-item-action disabled"><b>Assignment 6</b> - Pending assignment</a>
             </div>
