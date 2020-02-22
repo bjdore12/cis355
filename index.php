@@ -60,8 +60,23 @@
 
             <br>
 
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link">
+                        <b>Assignment 4</b> - Extension of assignment 3, using a junction table <span class="badge badge-info">New</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="list-group">
+                        <a href="As04/assignments.php" class="list-group-item list-group-item-action"><b>Assignments Database</b> - Link to access assignments database portion of the assignment</a>
+                        <a href="https://github.com/bjdore12/cis355/tree/master/As04" class="list-group-item list-group-item-action"><b>Link to Github</b> - View code used for assignment 4</a>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
             <div class="list-group">
-                <a href="As04/assignments.php" class="list-group-item list-group-item-action"><b>Assignment 4</b> - Extension of assignment 3, using a junction table <span class="badge badge-info">New</span></a>
                 <a href="#" class="list-group-item list-group-item-action disabled"><b>Assignment 5</b> - Pending assignment</a>
                 <a href="#" class="list-group-item list-group-item-action disabled"><b>Assignment 6</b> - Pending assignment</a>
             </div>
