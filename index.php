@@ -87,7 +87,7 @@
 
 <footer class="container">
     <div class="jumbotron" style="margin-bottom:0;background-color: white; height:5%">
-        <p style="color:dimgray">© Copyright 2019 Benjamin J. Dore<br>
+        <p style="color:dimgray">© Copyright 2020 Benjamin J. Dore<br>
             Email: <a href="mailto:bjdore@svsu.edu?subject=You're doing awesome!&body=Such great work! A+ for you!">bjdore@svsu.edu</a></p>
     </div>
 </footer>
