@@ -80,6 +80,26 @@
                 <a href="#" class="list-group-item list-group-item-action disabled"><b>Assignment 5</b> - Pending assignment</a>
                 <a href="#" class="list-group-item list-group-item-action disabled"><b>Assignment 6</b> - Pending assignment</a>
             </div>
+
+            <br><br>
+
+            <p>Below assignments are not graded and are simply for practice:</p>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link">
+                        <b>Ungraded - File Upload</b> - Practice with creating a file upload system, with and without MySQL <span class="badge badge-info">New</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="list-group">
+                        <a href="http://bjdore.000webhostapp.com/Ungraded/Upload01/upload01.html" class="list-group-item list-group-item-action"><b>Upload One</b> - No MySQL implementation</a>
+                        <a href="#" class="list-group-item list-group-item-action"><b>Upload Two</b> - MySQL implementation to hold the filepath</a>
+                        <a href="#" class="list-group-item list-group-item-action"><b>Upload Three</b> - MySQL implementation, using a BLOB</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <hr>
