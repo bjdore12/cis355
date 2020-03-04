@@ -95,7 +95,7 @@
                     <div class="list-group">
                         <a href="http://bjdore.000webhostapp.com/Ungraded/Upload01/upload01.html" class="list-group-item list-group-item-action"><b>Upload One</b> - No MySQL implementation</a>
                         <a href="http://bjdore.000webhostapp.com/Ungraded/Upload02/upload02.html" class="list-group-item list-group-item-action"><b>Upload Two</b> - MySQL implementation to hold the filepath</a>
-                        <a href="#" class="list-group-item list-group-item-action"><b>Upload Three</b> - MySQL implementation, using a BLOB</a>
+                        <a href="http://bjdore.000webhostapp.com/Ungraded/Upload03/upload03.html" class="list-group-item list-group-item-action"><b>Upload Three</b> - MySQL implementation, using a BLOB</a>
                     </div>
                 </div>
             </div>
