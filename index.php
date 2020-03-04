@@ -93,9 +93,10 @@
                 </div>
                 <div class="card-body">
                     <div class="list-group">
-                        <a href="http://bjdore.000webhostapp.com/Ungraded/Upload01/upload01.html" class="list-group-item list-group-item-action"><b>Upload One</b> - No MySQL implementation</a>
-                        <a href="http://bjdore.000webhostapp.com/Ungraded/Upload02/upload02.html" class="list-group-item list-group-item-action"><b>Upload Two</b> - MySQL implementation to hold the filepath</a>
-                        <a href="http://bjdore.000webhostapp.com/Ungraded/Upload03/upload03.html" class="list-group-item list-group-item-action"><b>Upload Three</b> - MySQL implementation, using a BLOB</a>
+                        <a href="http://bjdore.000webhostapp.com/Ungraded/Upload01/upload01.html" class="list-group-item list-group-item-action"><b>Upload 1</b> - No MySQL implementation</a>
+                        <a href="http://bjdore.000webhostapp.com/Ungraded/Upload02/upload02.html" class="list-group-item list-group-item-action"><b>Upload 2</b> - MySQL implementation to hold the filepath</a>
+                        <a href="http://bjdore.000webhostapp.com/Ungraded/Upload03/upload03.html" class="list-group-item list-group-item-action"><b>Upload 3</b> - MySQL implementation, using a BLOB</a>
+                        <a href="https://github.com/bjdore12/cis355/tree/master/Ungraded" class="list-group-item list-group-item-action"><b>Link to Github</b> - View code used for this excersize, includes output photos for database and web app</a>
                     </div>
                 </div>
             </div>
