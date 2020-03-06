@@ -77,7 +77,7 @@
             <br>
 
             <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action disabled"><b>Assignment 5</b> - Pending assignment</a>
+                <a href="https://bjdore.000webhostapp.com/As05/" class="list-group-item list-group-item-action"><b>Assignment 5</b> - Develop a full fledged server driven web application with login and file upload <span class="badge badge-warning">Under Development</span></a>
                 <a href="#" class="list-group-item list-group-item-action disabled"><b>Assignment 6</b> - Pending assignment</a>
             </div>
 
